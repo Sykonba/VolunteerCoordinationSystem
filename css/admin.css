@@ -1,0 +1,37 @@
+.mycontainer{
+	background-color: #eeeeee;
+	border-radius: 5px;
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.center{
+	text-align: center;
+}
+.admin-wrapper{
+	border: 2px solid #cccccc;
+	background-color: #cccccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #888888;
+	text-align: left;
+	margin-top: 10px;
+}
+.wrapper-text{
+	margin-left: 25px;
+}
+.topmargin{
+	margin-top: 10px;
+}
+.red{
+	color: #ff0000;
+}
+.blue {
+	color: #006dcc;
+}
+.blue-indent{
+	color: #006dcc;
+	margin-left: 25px;
+}
+.wrapper{
+	height: 500px;
+}

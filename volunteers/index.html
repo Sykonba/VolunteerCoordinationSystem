@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Volunteer Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="fa fa-home"></span>
+                <a class="navbar-brand" href="index.html"> Volunteer Coordination System</a>
+               
+                <div class="col-sm-3 col-md-6 pull-right">
+                <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for users or organisations..." name="srch-term" id="srch-term" size="110">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+                </form>
+                </div>
+
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Elliot Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="messages-inbox.html"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+                    </li>
+                    <li>
+                        <a href="appstatus.html"><i class="fa fa-fw fa-info"></i> Check Application Status</a>
+                    </li>
+                    <li>
+                       <a href="settings.html"><i class="fa fa-fw fa-gear"></i> Account Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> Dashboard
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary" action="searchopp.html">
+                            <div class="panel-heading">
+                                <h1 class="panel-title"><i class="fa fa-fw fa-search"></i>  Search Opportunity</h1>
+                            </div> 
+                                <form class="form-inline">
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" id="keywords" placeholder="Keywords..">
+                                  </div>                               
+                                    <select class="form-control">&nbsp;
+                                        <option value="one">-</option>
+                                        <option value="two">40 hours per week</option>
+                                        <option value="three">20-40 hours per week</option>
+                                        <option value="four">10-20 hours per week</option>
+                                        <option value="five"><10 hours per week</option>
+                                    </select>
+                                  <div class="form-group">&nbsp;
+                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="City, Town, Postcode..">
+                                  </div>
+                                  <select class="form-control">&nbsp;
+                                        <option value="one">0 miles</option>
+                                        <option value="two">Within 10 miles</option>
+                                        <option value="three">Within 20 miles</option>
+                                        <option value="four">Within 50 miles</option>
+                                        <option value="five">Within 100 miles</option>
+                                        <option value="five">Nationwide</option>
+                                    </select>
+                                  &nbsp;
+                                  <a class="btn btn-primary" href="searchopp.html" role="button"><i class="fa fa-fw fa-search"></i> <font color="white"> Search</button> &nbsp;</a>
+                                  <a href="searchfilters.html"> Advanced Search</a>
+                                </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"></i> Recommended Opportunities</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="oppdetails.html" class="list-group-item">
+                                        <h3> In Home Support Volunteering Opportunity</h3>
+                                        Organisation: Cancer Council Liverpool
+                                        <span class="pull-right">Location: Liverpool, UK</span><br><br>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h3> Sample Opportunity</h3>
+                                        Organisation x
+                                        <span class="pull-right">Location y</span><br><br>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h3> Sample Opportunity</h3>
+                                        Organisation x
+                                        <span class="pull-right">Location y</span><br><br>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h3> Sample Opportunity</h3>
+                                        Organisation x
+                                        <span class="pull-right">Location y</span><br><br>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h3> Sample Opportunity</h3>
+                                        Organisation x
+                                        <span class="pull-right">Location y</span><br><br>
+                                    </a>
+                                </div>
+                                <nav>
+                                      <ul class="pagination pull-right">
+                                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                      </ul>
+                                </nav>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../js/plugins/morris/raphael.min.js"></script>
+    <script src="../js/plugins/morris/morris.min.js"></script>
+    <script src="../js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
